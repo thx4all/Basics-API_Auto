@@ -5,7 +5,7 @@
     <classes>
       <class name="Try3">
         <methods>
-          <include name="Test1"/>
+          <include name="Add_and_Delete_Place"/>
         </methods>
       </class> <!-- Try3 -->
     </classes>

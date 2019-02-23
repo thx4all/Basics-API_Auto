@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Try3">
+      <class name="Try5_POST_XML">
         <methods>
-          <include name="Add_and_Delete_Place"/>
+          <include name="postData"/>
         </methods>
-      </class> <!-- Try3 -->
+      </class> <!-- Try5_POST_XML -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,20 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3508" started-at="2019-02-17T20:25:58Z" finished-at="2019-02-17T20:26:01Z">
+  <suite name="Default suite" duration-ms="1864" started-at="2019-02-23T08:29:08Z" finished-at="2019-02-23T08:29:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3508" started-at="2019-02-17T20:25:58Z" finished-at="2019-02-17T20:26:01Z">
-      <class name="Try3_POST_ADD_and_DELETE_place">
-        <test-method status="PASS" signature="getData()[pri:0, instance:Try3_POST_ADD_and_DELETE_place@6093dd95]" name="getData" is-config="true" duration-ms="12" started-at="2019-02-17T20:25:58Z" finished-at="2019-02-17T20:25:58Z">
+    <test name="Default test" duration-ms="1864" started-at="2019-02-23T08:29:08Z" finished-at="2019-02-23T08:29:10Z">
+      <class name="Try5_POST_XML">
+        <test-method status="PASS" signature="postData()[pri:0, instance:Try5_POST_XML@1e88b3c]" name="postData" duration-ms="1834" started-at="2019-02-23T08:29:08Z" finished-at="2019-02-23T08:29:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getData -->
-        <test-method status="PASS" signature="Add_and_Delete_Place()[pri:0, instance:Try3_POST_ADD_and_DELETE_place@6093dd95]" name="Add_and_Delete_Place" duration-ms="3472" started-at="2019-02-17T20:25:58Z" finished-at="2019-02-17T20:26:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Add_and_Delete_Place -->
-      </class> <!-- Try3_POST_ADD_and_DELETE_place -->
+        </test-method> <!-- postData -->
+      </class> <!-- Try5_POST_XML -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

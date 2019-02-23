@@ -14,6 +14,9 @@ import java.util.Properties;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import files.payLoad;
+import files.resources;
+
 public class Try3_POST_ADD_and_DELETE_place {
 
 	Properties prop= new Properties();
@@ -30,32 +33,20 @@ public class Try3_POST_ADD_and_DELETE_place {
 	@Test
 	public void Add_and_Delete_Place()
 	{
-		String b =
-				"{\r\n" + 
-				"    \"location\":{\r\n" + 
-				"        \"lat\" : -38.383494,\r\n" + 
-				"        \"lng\" : 33.427362\r\n" + 
-				"    },\r\n" + 
-				"    \"accuracy\":50,\r\n" + 
-				"    \"name\":\"Frontline house\",\r\n" + 
-				"    \"phone_number\":\"(+91) 983 893 3937\",\r\n" + 
-				"    \"address\" : \"29, side layout, cohen 09\",\r\n" + 
-				"    \"types\": [\"shoe park\",\"shop\"],\r\n" + 
-				"    \"website\" : \"http://google.com\",\r\n" + 
-				"    \"language\" : \"French-IN\"\r\n" + 
-				"}";
+		
 		
 		//Grab the response
 		RestAssured.baseURI= prop.getProperty("HOST");
 		Response res=given().
 		
 		given().
-			queryParam("key","qaclick123").
+			queryParam("key",prop.getProperty("KEY")).
 			
-			body(b).
+			body(payLoad.AddBody1()).
 			
 			when().
-			post("maps/api/place/add/json").
+			//post("maps/api/place/add/json").
+			post(resources.placePostData()).
 			
 			then().assertThat().			
 			statusCode(200).and().
